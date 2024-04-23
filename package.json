@@ -1,0 +1,36 @@
+{
+  "name": "runes",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Javascript ordinals runestone implementation",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.mjs",
+    "prepublishOnly": "bun run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "bun",
+    "bitcoin",
+    "runestone",
+    "ordinal",
+    "inscription",
+    "ord"
+  ],
+  "devDependencies": {
+    "bun-plugin-dts": "^0.2.1",
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.19.5",
+    "big-varuint-js": "^0.2.1",
+    "tsx": "^4.7.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
